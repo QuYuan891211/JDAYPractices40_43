@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="JDAYPractice40_43JS_JQuery:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDAYPractice40_43JS_JQuery_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JDAYPractice40_43JS_JQuery/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
