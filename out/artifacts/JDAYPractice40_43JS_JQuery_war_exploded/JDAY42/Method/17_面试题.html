@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	 <script type="text/javascript" src="../../../../../../CS/JavaWeb/JavaWebVideo/day42_jQuery九类选择器及应用/js-day03资料/代码/js-day03/WebRoot/js/jquery-1.8.2.js"></script>
+  	 <script type="text/javascript">
+  	  	function myclick(){
+	 		//ʹ��jquery����������tr��ǩ�µ�td���ֵ����A1,A2,A3,C1,C2,C3
+	 		var $tr = $("table tr:NOT(:last):even");
+	 		//��ÿ��tr��ǩ�в�ѯtd��ǩ
+	 		$tr.each(function(){
+	 			//��tr��ǩ�в�ѯ���е�td��ǩ
+	 			var $td = $(this).find("td");
+	 			//����
+	 			$td.each(function(){
+	 				var content = $(this).text();
+	 				alert(content);
+	 			});
+	 		});
+	 	}
+	 	//д����һ�ַ�ʽ���ȵ�һ�ָ���easy
+  	 </script>
+  </head>
+  <body>
+	<table border="2" align="center" width="30%">
+		<tr>
+			<td>A1</td><td>A2</td><td>A3</td><td>0</td>
+		</tr>
+		<tr>
+			<td>B1</td><td>B2</td><td>B3</td><td>1</td>
+		</tr>
+		<tr>
+			<td>C1</td><td>C2</td><td>C3</td><td>2</td>
+		</tr>
+		<tr>
+			<td>D1</td><td>D2</td><td>D3</td><td>3</td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center">
+				<input type="button" value="  ��  ��  " onclick="myclick()" />
+			</td>
+			<td>4</td>
+		</tr>
+	</table>
+  </body>
+</html>
+
+	
+	
+	
+	
